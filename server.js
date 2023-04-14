@@ -10,6 +10,8 @@ let corsOptions = {
 };
 
 
+
+
 app.use(cors(corsOptions));
 
 
@@ -21,6 +23,16 @@ app.use(bodyParser.json());
 // parse request of content-type -- application/x-www-form-urlencoded
 app.use(bodyParser.urlencoded());
 
+
+
+
+
+
+// simple route
+
+app.get('/', (req, res) => {
+    res.json({message: 'Welcome to the application of MEVN stack'})
+})
 
 
 const db = require('./app/models');
@@ -39,14 +51,11 @@ db.mongoose
 
 
 
-// simple route
 
-app.get('/', (req, res) => {
-    res.json({message: 'Welcome to the application of MEVN stack'})
-})
+
+
 
 // set up the port, listen for request
-
 const PORT = process.env.PORT || 8080;
 app.listen(PORT, () => {
     console.log(`Server is listening on port ${PORT}`);

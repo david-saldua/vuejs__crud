@@ -1,0 +1,32 @@
+{
+  "name": "mevn__crud",
+  "version": "1.0.0",
+  "description": "Node.js Restful CRUD API with Node.js, Express and MongoDB",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/david-saldua/vuejs__crud.git"
+  },
+  "keywords": [
+    "nodejs",
+    "express",
+    "mongodb",
+    "rest",
+    "api"
+  ],
+  "author": "dabid",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/david-saldua/vuejs__crud/issues"
+  },
+  "homepage": "https://github.com/david-saldua/vuejs__crud#readme",
+  "dependencies": {
+    "body-parser": "^1.20.2",
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
+    "mongoose": "^7.0.3"
+  }
+}
